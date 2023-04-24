@@ -32,7 +32,7 @@ for (let name in obj) {
 // задание 5
 
 let num = 0;
-for(let n = 1000; n > 25; n = n / 2) {
+for(let n = 1000; n > 25; n /= 2) {
 console.log(n);
 num++;
 }
@@ -41,7 +41,7 @@ num++;
 
 let num = 0, n = 1000;
 while(n > 50) {
-    n = n / 2;
+    n /= 2;
     console.log(n);
     num++;
 }
@@ -50,6 +50,6 @@ while(n > 50) {
 
 let friday = 7;
 
-for (let friday = 5; friday <= 31; friday = friday + 6) { 
+for (let friday = 5; friday <= 31; friday = friday += 7) { 
     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
 }
