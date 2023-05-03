@@ -24,6 +24,9 @@ img {
   background-position: no-repeat;
   background-size: cover;
 }
+.top__content {
+  padding-top: 217px;
+}
 .top__title {
   font-style: normal;
   font-weight: 700;
@@ -176,6 +179,10 @@ img {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+  }
+  .top__button {
+    margin-left: 70px;
+    margin-right: 70px;
   }
   .game {
     width: 343px;

@@ -43,10 +43,10 @@ function printMessage(num) {
 
     if (12 > num && num >= 0) {
         alert("Привет, друг!");
-        
+
     } else if (+num >= 13) {
         alert("Добро пожаловать!");
-    
+
     } else {
         alert("Вы ввели неправильное значение.");
     }
@@ -57,8 +57,8 @@ printMessage(age);
 
 // задание 5
 
-numA = number(prompt('Введите первое число.'));
-numB = number(prompt('Введите второе число.'));
+numA = Number(prompt('Введите первое число.'));
+numB = Number(prompt('Введите второе число.'));
 
 const numberNew = (a, b) => {
 
@@ -80,7 +80,7 @@ function cubeNumber() {
 
     if (isNaN(x)) {
         let y = x * x * x;
-        return ('${x} в кубе равняется ${y}');
+        return (`${x} в кубе равняется ${y}`);
 
     } else {
         return ('Переданный параметр не является числом');
@@ -100,14 +100,14 @@ function getCirclePerimeter() {
 }
 
 const circle1 {
-    radius: 14,
+    radius = 14,
 
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
 };
 
 const circle2 {
-    radius: 20,
+    radius = 20,
 
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
