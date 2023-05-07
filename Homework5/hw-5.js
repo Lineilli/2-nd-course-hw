@@ -99,15 +99,15 @@ function getCirclePerimeter() {
     return this.radius * 3.14 * 2;
 }
 
-const circle1 {
-    radius = 14,
+const circle1 = {
+    radius: 14,
 
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
 };
 
-const circle2 {
-    radius = 20,
+const circle2 = {
+    radius: 20,
 
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
