@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #000915;
 }
 
 .center {
@@ -12,16 +13,20 @@ body {
     padding-right: calc(50% - 600px);
 }
 
-.top-box {
+img {
+    max-width: 100%;
+}
+
+.top {
     height: 1024px;
     background-image: url(img/topback.jpg);
     background-position: center;
     background-position: no-repeat;
     background-size: cover;
-}
 
-.top {
-    padding-top: 205px;
+    &__content {
+        padding-top: 217px;
+    }
 
     &__title {
         font-style: normal;
@@ -33,47 +38,53 @@ body {
     }
 
     &__text {
+        width: 481px;
+        word-break: normal;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 32px;
         color: #FFFFFF;
         padding-bottom: 44px;
-
     }
 
     &__button {
-        width: 234px;
-        height: 48px;
-        display: block;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        display: flex;
+        padding: 13px 74px;
         align-items: center;
-        justify-content: center;
-        align-self: center;
+        color: #FFFFFF;
         background: #9C0332;
         border-radius: 30px;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif; 
+        text-decoration-line: none;
+        font-family: 'Montserrat', sans-serif;
+        
+        &:hover {
+            background: #EB443F;
+        }
+    
+        &:hover {
+            cursor: url(./img/Vector.svg), pointer;
+        }
     }
 }
 
 .game-box {
-    background: #000915;
-    padding-top: 128px;
-    height: 556px;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 32px;
-    grid-template-columns: repeat(12, 1fr);
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 .game {
     width: 378px;
-    height: 300px;
-    border-radius: 18px;
+    min-height: 300px;
+    border-radius: 16px;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -84,8 +95,17 @@ body {
     color: #FFFFFF;
     text-decoration-line: none;
 
-    grid-column: span 4;
-    
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-end;
+
+    &:hover {
+        border: 3px solid #44D2FF;
+
+        &:hover {
+            cursor: url(./img/Vector.svg), pointer;
+        }
+    }
 
     &__1 {
         background-image: url(img/game1.jpg);
@@ -105,3 +125,45 @@ body {
         padding-bottom: 32px;
     }
 }
+
+.playGame {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 282px;
+    padding-bottom: 282px;
+
+    &__content {
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        width: 584px;
+        word-break: normal;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+   
+}
+
+@import 'mobile';
