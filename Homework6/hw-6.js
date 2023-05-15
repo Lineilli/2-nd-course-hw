@@ -2,8 +2,8 @@
 
 let numb = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numb.length; i++) {
-    if (numb[i] == 10) break;
     console.log(numb[i]);
+    if (numb[i] == 10) break;
 }
 
 // задание 2
@@ -139,8 +139,7 @@ console.log(words());
 // задание 13
 
 function filterPositive(array) {
-    let arr = [];
-    return array.filter(arr <= -1);
+    return array.filter(number <= -1);
 }
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));
