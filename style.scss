@@ -47,27 +47,27 @@ img {
         color: #FFFFFF;
         padding-bottom: 44px;
     }
+}
 
-    &__button {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 13px 74px;
-        align-items: center;
-        color: #FFFFFF;
-        background: #9C0332;
-        border-radius: 30px;
-        text-decoration-line: none;
-        font-family: 'Montserrat', sans-serif;
-        
-        &:hover {
-            background: #EB443F;
-        }
+.button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 13px 74px;
+    align-items: center;
+    color: #FFFFFF;
+    background: #9C0332;
+    border-radius: 30px;
+    text-decoration-line: none;
+    font-family: 'Montserrat', sans-serif;
     
-        &:hover {
-            cursor: url(./img/Vector.svg), pointer;
-        }
+    &:hover {
+        background: #EB443F;
+    }
+
+    &:hover {
+        cursor: url(./img/Vector.svg), pointer;
     }
 }
 

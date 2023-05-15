@@ -45,7 +45,8 @@ img {
   color: #FFFFFF;
   padding-bottom: 44px;
 }
-.top__button {
+
+.button {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -58,10 +59,10 @@ img {
   text-decoration-line: none;
   font-family: "Montserrat", sans-serif;
 }
-.top__button:hover {
+.button:hover {
   background: #EB443F;
 }
-.top__button:hover {
+.button:hover {
   cursor: url(./img/Vector.svg), pointer;
 }
 
@@ -180,7 +181,7 @@ img {
     line-height: 22px;
     text-align: center;
   }
-  .top__button {
+  .button {
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -209,5 +210,9 @@ img {
     line-height: 22px;
     text-align: center;
     width: 343px;
+  }
+  .game2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 }/*# sourceMappingURL=style.css.map */
