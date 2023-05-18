@@ -34,19 +34,22 @@ console.log(max);
 
 // задание 5
 
-function getRandomInt(1, 10) {
-    min = Math.ceil(1);
-    max = Math.floor(10);
-    return Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+let a = 1;
+let b = 10;
+
+function getRandomInt(a, b) {
+    min = Math.ceil(a);
+    max = Math.floor(b);
+    return Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
-console.log(getRandomInt(1, 10));
+console.log(getRandomInt(a, b));
 
 // задание 6
 
 function getRandomArrNumbers(num) {
-    min = 0;
-    max = num;
+    let min = 0;
+    let max = num;
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
@@ -56,18 +59,18 @@ console.log(getRandomArrNumbers(12));
 
 // задание 7
 
-let a = Number(prompt('Введите первое число'));
-let b = Number(prompt('Введите второе число'));
+let firstNum = Number(prompt('Введите первое число'));
+let secondNum = Number(prompt('Введите второе число'));
 
-function getRandomInt(min, max) {
-    min = Math.min(a, b);
-    max = Math.max(a, b);
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
+function getRandomInt(a, b) {
+    a = Math.min;
+    b = Math.max;
+    a = Math.ceil(a);
+    b = Math.floor(b);
+    return Math.floor(Math.random() * (b - a)) + a;
 }
 
-console.log(getRandomInt());
+console.log(getRandomInt(firstNum, secondNum));
 
 // задание 8
 
