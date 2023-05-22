@@ -9,7 +9,7 @@ console.log(stringJs.toUpperCase());
 function searchStart(arr, str) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
-      if (arr[i].toLowerCase().includes(str.toLowerCase())) {
+      if (arr[i].toLowerCase().startsWith(str.toLowerCase())) {
         console.log(newArr);
       }
     }
