@@ -6,14 +6,18 @@ console.log(stringJs.toUpperCase());
 
 // задание 2
 
-const arrayOfStrings = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
+function searchStart(arr, str) {
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].toLowerCase().includes(str.toLowerCase())) {
+        console.log(newArr);
+      }
+    }
+  }
 
-arrayOfStrings.forEach((searchStart) => {
-    if (searchStart.toLowerCase().includes(search.toLowerCase())) {
-		console.log(searchStart);
-	}
-});
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); 
+searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); 
+searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); 
 
 // задание 3
 
