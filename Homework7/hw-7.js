@@ -10,7 +10,7 @@ function searchStart(arr, str) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].toLowerCase().startsWith(str.toLowerCase())) {
-        console.log(newArr);
+        newArr.push(arr[i].toLowerCase());
       }
     }
   }
@@ -51,30 +51,23 @@ console.log(getRandomInt(a, b));
 
 // задание 6
 
-function getRandomArrNumbers(num) {
-    let min = 0;
-    let max = num;
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
+function getRandomArrNumbers(n) {
+  const arr = [];
+
+  for (let i = 0; i < n / 2; i++) {
+    arr.push(Math.floor(Math.random() * (n + 1)));
+  }
+  return arr;
 }
-console.log(getRandomArrNumbers(7));
-console.log(getRandomArrNumbers(12));
+console.log(getRandomNumbers(7));
+console.log(getRandomNumbers(12));
 
 // задание 7
 
-let firstNum = Number(prompt('Введите первое число'));
-let secondNum = Number(prompt('Введите второе число'));
-
-function getRandomInt(a, b) {
-    a = Math.min;
-    b = Math.max;
-    a = Math.ceil(a);
-    b = Math.floor(b);
-    return Math.floor(Math.random() * (b - a)) + a;
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-console.log(getRandomInt(firstNum, secondNum));
+  console.log(getRandomInt(1, 10));
 
 // задание 8
 
